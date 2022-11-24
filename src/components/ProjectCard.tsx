@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import { styled } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom'
 
 const Card = styled(MuiCard)({
   backgroundColor: '#D0E5FA',
@@ -45,8 +46,9 @@ const Image = styled('img')({
 })
 
 const ProjectCard = (props: any) => {
+  const navigate = useNavigate()
   return (
-    <Card elevation={0}>
+    <Card elevation={0} onClick={() => navigate(props.projectPageURL)}>
       <CardActionArea>
         <CardHeader variant="h4">
           {props.title}

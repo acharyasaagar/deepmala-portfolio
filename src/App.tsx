@@ -2,17 +2,28 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Spinner from './components/Spinner'
 
-const About = React.lazy(() => import('./routes/about'))
-const Projects = React.lazy(() => import('./routes/projects'))
+const AboutPage = React.lazy(() => import('./routes/about'))
+const ProjectsPage = React.lazy(() => import('./routes/projects'))
+const GroceryShoppingAppPage = React.lazy(
+  () => import('./routes/projects/grocery-shopping-app')
+)
 
 function App() {
   return (
     <Routes>
       <Route
-        path="/projects"
+        path="projects/grocery-shopping-app"
         element={
           <Spinner>
-            <Projects />
+            <GroceryShoppingAppPage />
+          </Spinner>
+        }
+      />
+      <Route
+        path="projects"
+        element={
+          <Spinner>
+            <ProjectsPage />
           </Spinner>
         }
       />
@@ -20,7 +31,7 @@ function App() {
         path="/"
         element={
           <Spinner>
-            <About />
+            <AboutPage />
           </Spinner>
         }
       />

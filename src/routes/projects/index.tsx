@@ -15,7 +15,11 @@ const Projects = () => {
       <Topbar />
       <CardsContainer>
         <Fade bottom>
-          <ProjectCard title="Grocery shopping app" imgURL="/photo.jpg" />
+          <ProjectCard
+            title="Grocery shopping app"
+            imgURL="/photo.jpg"
+            projectPageURL="/projects/grocery-shopping-app"
+          />
         </Fade>
         <Fade bottom>
           <ProjectCard title="Customize sweatshirt" imgURL="/photo.jpg" />
