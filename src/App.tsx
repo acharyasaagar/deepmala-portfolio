@@ -7,6 +7,12 @@ const ProjectsPage = React.lazy(() => import('./routes/projects'))
 const GroceryShoppingAppPage = React.lazy(
   () => import('./routes/projects/grocery-shopping-app')
 )
+const CustomizeSweatShirtPage = React.lazy(
+  () => import('./routes/projects/customize-sweatshirt')
+)
+const ExpenseTrackerPage = React.lazy(
+  () => import('./routes/projects/expense-tracker')
+)
 
 function App() {
   return (
@@ -16,6 +22,22 @@ function App() {
         element={
           <Spinner>
             <GroceryShoppingAppPage />
+          </Spinner>
+        }
+      />
+      <Route
+        path="projects/customize-sweatshirt"
+        element={
+          <Spinner>
+            <CustomizeSweatShirtPage />
+          </Spinner>
+        }
+      />
+      <Route
+        path="projects/expense-tracker"
+        element={
+          <Spinner>
+            <ExpenseTrackerPage />
           </Spinner>
         }
       />
