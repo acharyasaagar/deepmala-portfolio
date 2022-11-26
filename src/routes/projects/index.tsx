@@ -7,6 +7,7 @@ const CardsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  padding: 32,
 })
 
 const Projects = () => {
@@ -17,21 +18,21 @@ const Projects = () => {
         <Fade bottom>
           <ProjectCard
             title="Grocery shopping app"
-            imgURL="/photo.jpg"
+            imgURL="/images/grocery_app_preview.png"
             projectPageURL="/projects/grocery-shopping-app"
           />
         </Fade>
         <Fade bottom>
           <ProjectCard
             title="Customize sweatshirt"
-            imgURL="/photo.jpg"
+            imgURL="/images/customize_sweatshirt_preview.png"
             projectPageURL="/projects/customize-sweatshirt"
           />
         </Fade>
         <Fade bottom>
           <ProjectCard
             title="Daily expense tracker app"
-            imgURL="/photo.jpg"
+            imgURL="/images/expense_tracker_preview_desktop.png"
             projectPageURL="/projects/expense-tracker"
           />
         </Fade>

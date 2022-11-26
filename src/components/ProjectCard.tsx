@@ -8,10 +8,9 @@ import { useNavigate } from 'react-router-dom'
 
 const Card = styled(MuiCard)({
   backgroundColor: '#D0E5FA',
-  height: 'calc(100vh - 255px)',
-  width: '100%',
+  width: '100% - 64px',
   maxWidth: 960,
-  marginBottom: 40,
+  marginBottom: 80,
   '&:hover': {
     '& svg': {
       opacity: 1,
@@ -23,6 +22,7 @@ const CardHeader = styled(Typography)({
   textAlign: 'center',
   marginTop: 16,
   color: '#0D70D3',
+  padding: 40,
   '& svg': {
     marginTop: 2,
     marginLeft: 24,
