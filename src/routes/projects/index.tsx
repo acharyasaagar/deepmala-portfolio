@@ -22,10 +22,18 @@ const Projects = () => {
           />
         </Fade>
         <Fade bottom>
-          <ProjectCard title="Customize sweatshirt" imgURL="/photo.jpg" />
+          <ProjectCard
+            title="Customize sweatshirt"
+            imgURL="/photo.jpg"
+            projectPageURL="/projects/customize-sweatshirt"
+          />
         </Fade>
         <Fade bottom>
-          <ProjectCard title="Daily expense tracker app" imgURL="/photo.jpg" />
+          <ProjectCard
+            title="Daily expense tracker app"
+            imgURL="/photo.jpg"
+            projectPageURL="/projects/expense-tracker"
+          />
         </Fade>
       </CardsContainer>
     </div>
