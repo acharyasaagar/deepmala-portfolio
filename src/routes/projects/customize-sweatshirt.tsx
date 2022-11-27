@@ -82,7 +82,7 @@ const CustomizeSweatShirtPage = () => {
             <ImageSectionHeader>Persona</ImageSectionHeader>
             <Image
               src="/images/customize_persona.png"
-              alt="Customize sweatshirt app personal images"
+              alt="Customize sweatshirt app persona image"
             />
           </Section>
         </Fade>
