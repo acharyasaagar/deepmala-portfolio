@@ -39,7 +39,7 @@ const ImageContainer = styled('div')({
     maxWidth: '100%',
     maxHeight: '100%',
     background: '#0D70D3',
-    borderRadius: 8,
+    borderRadius: 20,
   },
 })
 

@@ -1,6 +1,7 @@
+import Link from './Link'
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const NavContainer = styled('nav')({
   padding: '20px 32px',
@@ -10,12 +11,20 @@ const NavContainer = styled('nav')({
 })
 
 const LogoContainer = styled('div')({
+  cursor: 'pointer',
+  '&:hover': {
+    '& h1, & p': {
+      color: '#0D70D3',
+    },
+  },
   '& h1': {
     fontWeight: 400,
     fontSize: 128,
+    transition: 'color 0.2s',
   },
   '& p': {
     marginLeft: 12,
+    transition: 'color 0.2s',
   },
 })
 
@@ -23,18 +32,30 @@ const NavList = styled('div')({})
 const NavLink = styled(Link)({
   padding: 12,
   fontSize: 24,
+  textDecoration: 'none',
+  color: 'black',
+  transition: 'color 0.2s, text-decoration 0.2s',
+  '&:hover': {
+    color: '#0D70D3',
+    textDecoration: 'underline',
+  },
 })
 
 const Topbar = () => {
+  const navigate = useNavigate()
   return (
     <NavContainer>
-      <LogoContainer>
+      <LogoContainer onClick={() => navigate('/')}>
         <Typography variant="h1">DS</Typography>
         <Typography>Deep Mala Shrestha</Typography>
       </LogoContainer>
       <NavList>
-        <NavLink to="/">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/" activeClassName="activeLink">
+          About
+        </NavLink>
+        <NavLink activeClassName="activeLink" to="/projects">
+          Projects
+        </NavLink>
       </NavList>
     </NavContainer>
   )
