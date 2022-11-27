@@ -1,18 +1,11 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Spinner from './components/Spinner'
-
-const AboutPage = React.lazy(() => import('./routes/about'))
-const ProjectsPage = React.lazy(() => import('./routes/projects'))
-const GroceryShoppingAppPage = React.lazy(
-  () => import('./routes/projects/grocery-shopping-app')
-)
-const CustomizeSweatShirtPage = React.lazy(
-  () => import('./routes/projects/customize-sweatshirt')
-)
-const ExpenseTrackerPage = React.lazy(
-  () => import('./routes/projects/expense-tracker')
-)
+import AboutPage from './routes/about'
+import ProjectsPage from './routes/projects'
+import GroceryShoppingAppPage from './routes/projects/grocery-shopping-app'
+import CustomizeSweatShirtPage from './routes/projects/customize-sweatshirt'
+import ExpenseTrackerPage from './routes/projects/expense-tracker'
 
 function App() {
   return (
