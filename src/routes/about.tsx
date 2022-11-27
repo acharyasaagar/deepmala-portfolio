@@ -31,11 +31,15 @@ const Title = styled(Typography)({
 })
 
 const ImageContainer = styled('div')({
+  marginTop: 20,
+  marginBottom: 20,
   height: 500,
   '& img': {
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    background: '#0D70D3',
+    borderRadius: 8,
   },
 })
 
@@ -101,7 +105,7 @@ const About = () => {
         <Fade bottom>
           <Title variant="h3"> User Experience Designer</Title>
           <ImageContainer>
-            <img src="/profile.jpg" alt="A photo of deep mala" />
+            <img src="/profile.png" alt="A photo of deep mala" />
           </ImageContainer>
           <Greeting variant="h3">Hello, I am Deep Mala.</Greeting>
         </Fade>
