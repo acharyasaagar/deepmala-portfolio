@@ -3,11 +3,15 @@ import Typography from '@mui/material/Typography'
 import Topbar from '../../components/Topbar'
 import Fade from 'react-reveal/Fade'
 import {
+  Image,
+  ImageSectionHeader,
   PageHeader,
   ScrollToTop,
   Section,
   SectionHeader,
   SectionSubHeader,
+  WireframeContainer,
+  WireframesContainer,
 } from './__components'
 
 const CustomizeSweatShirtPage = () => {
@@ -72,6 +76,104 @@ const CustomizeSweatShirtPage = () => {
               conducting usability studies, accounting for accessibility and
               iterating on designs.)
             </Typography>
+          </Section>
+        </Fade>
+
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Persona</ImageSectionHeader>
+            <Image
+              src="/images/customize_persona.png"
+              alt="Customize sweatshirt app personal images"
+            />
+          </Section>
+        </Fade>
+
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>User journey map</ImageSectionHeader>
+            <Image
+              src="/images/customize_user_journey_map.png"
+              alt="Customize sweatshirt app user journey map image"
+            />
+          </Section>
+        </Fade>
+
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Sitemap</ImageSectionHeader>
+            <Image
+              src="/images/customize_sitemap.png"
+              alt="Customize sweatshirt app user site map image"
+            />
+          </Section>
+        </Fade>
+
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Low fidelity wireframes</ImageSectionHeader>
+            <WireframesContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_0.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_1.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_2.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_3.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_4.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_5.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_6.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_7.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_8.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/customize_lowfi_9.png"
+                  alt="customize app low fidelity wireframe"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
           </Section>
         </Fade>
       </Container>

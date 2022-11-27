@@ -47,6 +47,7 @@ const GroceryShoppingAppPage = () => {
             <Typography>September 2021 - March 2022</Typography>
           </Section>
         </Fade>
+
         <Fade bottom>
           <Section>
             <SectionHeader>Research summary</SectionHeader>
@@ -64,6 +65,7 @@ const GroceryShoppingAppPage = () => {
             </Typography>
           </Section>
         </Fade>
+
         <Fade>
           <Section>
             <SectionHeader>My roles and responsibilities</SectionHeader>
