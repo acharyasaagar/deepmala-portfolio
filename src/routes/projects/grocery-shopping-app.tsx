@@ -47,7 +47,6 @@ const GroceryShoppingAppPage = () => {
             <Typography>September 2021 - March 2022</Typography>
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <SectionHeader>Research summary</SectionHeader>
@@ -65,7 +64,6 @@ const GroceryShoppingAppPage = () => {
             </Typography>
           </Section>
         </Fade>
-
         <Fade>
           <Section>
             <SectionHeader>My roles and responsibilities</SectionHeader>
@@ -77,7 +75,15 @@ const GroceryShoppingAppPage = () => {
             </Typography>
           </Section>
         </Fade>
-
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Design process</ImageSectionHeader>
+            <Image
+              src="/images/design_process.png"
+              alt="Customize sweatshirt app design process image"
+            />
+          </Section>
+        </Fade>
         <Fade bottom>
           <Section>
             <ImageSectionHeader>Persona</ImageSectionHeader>
@@ -87,7 +93,6 @@ const GroceryShoppingAppPage = () => {
             />
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <ImageSectionHeader>User journey map</ImageSectionHeader>
@@ -97,7 +102,6 @@ const GroceryShoppingAppPage = () => {
             />
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <ImageSectionHeader>Usability test findings</ImageSectionHeader>
@@ -107,7 +111,6 @@ const GroceryShoppingAppPage = () => {
             />
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <ImageSectionHeader>Competitive Audit</ImageSectionHeader>
@@ -125,7 +128,6 @@ const GroceryShoppingAppPage = () => {
             </Link>
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <ImageSectionHeader>Low fidelity wireframes</ImageSectionHeader>
@@ -193,7 +195,6 @@ const GroceryShoppingAppPage = () => {
             </WireframesContainer>
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <ImageSectionHeader>High fidelity wireframes</ImageSectionHeader>
@@ -306,7 +307,6 @@ const GroceryShoppingAppPage = () => {
             </Link>
           </Section>
         </Fade>
-
         <Fade bottom>
           <Section>
             <Typography>

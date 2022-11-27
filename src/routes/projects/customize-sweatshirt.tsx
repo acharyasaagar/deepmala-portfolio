@@ -79,6 +79,15 @@ const CustomizeSweatShirtPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>Design process</ImageSectionHeader>
+            <Image
+              src="/images/design_process.png"
+              alt="Customize sweatshirt app design process image"
+            />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
             <ImageSectionHeader>Persona</ImageSectionHeader>
             <Image
               src="/images/customize_persona.png"
