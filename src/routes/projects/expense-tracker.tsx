@@ -100,7 +100,9 @@ const ExpenseTrackerPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
-            <ImageSectionHeader>High fidelity wireframes</ImageSectionHeader>
+            <ImageSectionHeader>
+              High fidelity wireframes - mobile version
+            </ImageSectionHeader>
             <WireframesContainer>
               <WireframeContainer>
                 <Image
@@ -148,7 +150,72 @@ const ExpenseTrackerPage = () => {
             <br />
             <Typography variant="caption">Check out:</Typography>
             <br />
-            <Link href="">High fidelity prototype - mobile version</Link>
+            <Link
+              target="_blank"
+              href="https://www.figma.com/proto/moZ9a7OEL8jBCTl8L4ASG9/Hi-fi-Expense-tracker?node-id=197%3A13795&scaling=min-zoom&page-id=309%3A3751&starting-point-node-id=197%3A13795"
+            >
+              High fidelity prototype - mobile version
+            </Link>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              High fidelity wireframes - desktop version
+            </ImageSectionHeader>
+            <WireframesContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_0.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_1.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_2.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_3.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_4.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_5.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_highfi_lg_6.png"
+                  alt="customize app high fidelity wireframe"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography variant="caption">Check out:</Typography>
+            <br />
+            <Link
+              target="_blank"
+              href="https://www.figma.com/proto/moZ9a7OEL8jBCTl8L4ASG9/Hi-fi-Expense-tracker?node-id=197%3A3502&scaling=min-zoom&page-id=167%3A2499&starting-point-node-id=197%3A3502&show-proto-sidebar=1"
+            >
+              High fidelity prototype - desktop version
+            </Link>
           </Section>
         </Fade>
         <Fade bottom>
