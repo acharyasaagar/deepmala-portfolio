@@ -71,7 +71,7 @@ const PositionedFab = styled(Fab)({
   display: 'none',
 })
 
-export const ScrollToTop = (props: any) => {
+export const ScrollToTop = () => {
   const buttonRef = React.useRef<HTMLButtonElement | null>(null)
 
   const scrollToTop = () => document.scrollingElement?.scrollTo({ top: 0 })

@@ -23,7 +23,7 @@ const GroceryShoppingAppPage = () => {
     <>
       <Topbar />
       <Container ref={containerRef} maxWidth="lg">
-        <ScrollToTop anchor={containerRef} />
+        <ScrollToTop />
         <Fade bottom cascade>
           <PageHeader variant="h3">Deep's Grocery Shopping App</PageHeader>
           <Section>

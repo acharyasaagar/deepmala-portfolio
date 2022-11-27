@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography'
 import Topbar from '../../components/Topbar'
 import {
   PageHeader,
+  ScrollToTop,
   Section,
   SectionHeader,
   SectionSubHeader,
@@ -13,6 +14,7 @@ const CustomizeSweatShirtPage = () => {
     <>
       <Topbar />
       <Container maxWidth="lg">
+        <ScrollToTop />
         <PageHeader variant="h3">Customize Sweatshirt</PageHeader>
         <Section>
           <SectionHeader>Project overview</SectionHeader>
