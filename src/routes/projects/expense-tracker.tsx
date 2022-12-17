@@ -7,6 +7,7 @@ import PeopleIcon from '@mui/icons-material/People'
 import PlaceIcon from '@mui/icons-material/Place'
 import EventNoteIcon from '@mui/icons-material/EventNote'
 import {
+  BeforeAfterHeader,
   Image,
   ImageSectionHeader,
   Link,
@@ -187,6 +188,72 @@ const ExpenseTrackerPage = () => {
                 />
               </WireframeContainer>
             </WireframesContainer>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 1: Enter amount
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/et_finding_1_before.png"
+                  alt="Expense tracker app enter amount findings before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/et_finding_1_after.png"
+                  alt="Expense tracker app enter amount findings after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography>
+              In the initial design, users got confused in adding amount and
+              they want to add amount in 2-3 steps. So based on the insights of
+              usability study 1, I made changes in adding amount and
+              highlighting the selected category.
+            </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 2: Amount and others
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/et_finding_2_before.png"
+                  alt="Expense tracker app amount and others findings before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/et_finding_2_after.png"
+                  alt="Expense tracker app amount and others findings after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography>
+              Based on the insights from usability study 2, I made some changes
+              by adding the date and add note options, so that the users can be
+              more clear about the required form and other options, which also
+              made the tracking expenses even less time consuming.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
