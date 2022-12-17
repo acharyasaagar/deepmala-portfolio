@@ -30,7 +30,7 @@ const userResearchPainPointPanelItems = [
   },
   {
     listMarker: 2,
-    title: 'Health Related Issues',
+    title: 'Health Issues',
     text: `Due to health related issues or old age, some users do not have physical capabilities to go to stores for grocery shopping.`,
   },
   {
@@ -445,6 +445,6 @@ export default GroceryShoppingAppPage
 const ListContainer = styled('ol')({
   paddingLeft: 20,
   '& li': {
-    marginBottom: 16,
+    marginBottom: 12,
   },
 })

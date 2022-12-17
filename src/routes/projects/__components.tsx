@@ -71,7 +71,7 @@ const PositionedFab = styled(Fab)({
   display: 'none',
 })
 
-export const PanelRoot = styled('div')({
+const PanelRoot = styled('div')({
   padding: 32,
   background: '#D0E5FA',
   display: 'flex',
@@ -83,7 +83,7 @@ export const PanelRoot = styled('div')({
 const PanelItemRoot = styled('div')({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  justifyContent: 'stretch',
   textAlign: 'center',
   width: 252,
 })

@@ -2,11 +2,16 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Topbar from '../../components/Topbar'
 import Fade from 'react-reveal/Fade'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import PeopleIcon from '@mui/icons-material/People'
+import PlaceIcon from '@mui/icons-material/Place'
+import EventNoteIcon from '@mui/icons-material/EventNote'
 import {
   Image,
   ImageSectionHeader,
   Link,
   PageHeader,
+  Panel,
   ScrollToTop,
   Section,
   SectionHeader,
@@ -14,6 +19,63 @@ import {
   WireframeContainer,
   WireframesContainer,
 } from './__components'
+import { styled } from '@mui/material'
+
+const userResearchPainPointPanelItems = [
+  {
+    listMarker: 1,
+    title: 'Sizes',
+    text: 'In most of the available websites, it is quite hard to find out the description of the sizes.',
+  },
+  {
+    listMarker: 2,
+    title: 'Designs',
+    text: `After receiving the deliveries, some users are not happy with the products’ design shown in the pictures and what they received.`,
+  },
+  {
+    listMarker: 3,
+    title: 'Delivery',
+    text: `After receiving the deliveries, some users are not happy with the products’ design shown in the pictures and what they received.`,
+  },
+]
+
+const accessibilityConsiderationsPanelItems = [
+  {
+    listMarker: 1,
+    text: 'Provided access for users in multiple languages.',
+  },
+  {
+    listMarker: 2,
+    text: 'Used detailed imaginary and description to help users for better understanding.',
+  },
+  {
+    listMarker: 3,
+    text: 'Used icons to help make navigation easier.',
+  },
+]
+
+const usabilityStudyParameterPanelItems = [
+  {
+    listMarker: <EventNoteIcon fontSize="inherit" />,
+    title: 'Study type',
+    text: 'Moderated usability study',
+  },
+  {
+    listMarker: <PlaceIcon fontSize="inherit" />,
+    title: 'Location',
+    text: 'Finland, Remote',
+  },
+  {
+    listMarker: <PeopleIcon fontSize="inherit" />,
+    title: 'Participants',
+    text: '3 participants',
+  },
+  {
+    listMarker: <AccessTimeIcon fontSize="inherit" />,
+    title: 'Length',
+    text: '10 - 20 minutes',
+  },
+]
 
 const CustomizeSweatShirtPage = () => {
   return (
@@ -88,6 +150,12 @@ const CustomizeSweatShirtPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>User research: Pain points</ImageSectionHeader>
+            <Panel items={userResearchPainPointPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
             <ImageSectionHeader>Persona</ImageSectionHeader>
             <Image
               src="/images/customize_persona.png"
@@ -102,6 +170,12 @@ const CustomizeSweatShirtPage = () => {
               src="/images/customize_user_journey_map.png"
               alt="Customize sweatshirt app user journey map image"
             />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Usability study: parameters</ImageSectionHeader>
+            <Panel items={usabilityStudyParameterPanelItems} />
           </Section>
         </Fade>
         <Fade bottom>
@@ -288,6 +362,15 @@ const CustomizeSweatShirtPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>
+              Accessibility considerations
+            </ImageSectionHeader>
+            <Panel items={accessibilityConsiderationsPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>What I learned</ImageSectionHeader>
             <Typography>
               This is my second project in UX Design, while designing this app,
               I learned the most important things are to understand the user’s
@@ -295,12 +378,31 @@ const CustomizeSweatShirtPage = () => {
               experience, conducting usability studies and iteration of the
               designs are the keys.
             </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>My next steps</ImageSectionHeader>
+            <ListContainer>
+              <li>
+                <Typography>
+                  Conduct another round of usability studies to validate whether
+                  the pain points users experienced have been efficetively
+                  addressed.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Conduct more user research to determine any new areas of need.
+                </Typography>
+              </li>
+            </ListContainer>
             <br />
-            <Typography>
+            <br />
+            <Typography variant="h6">
               Thank you for taking your time to review my work. I am very happy
-              to share my project with you. 🙂
+              to share my project with you.
             </Typography>
-            <br />
           </Section>
         </Fade>
       </Container>
@@ -309,3 +411,10 @@ const CustomizeSweatShirtPage = () => {
 }
 
 export default CustomizeSweatShirtPage
+
+const ListContainer = styled('ol')({
+  paddingLeft: 20,
+  '& li': {
+    marginBottom: 12,
+  },
+})
