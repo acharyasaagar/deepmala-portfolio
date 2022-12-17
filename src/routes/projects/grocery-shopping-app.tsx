@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade'
 import {
   Image,
   ImageSectionHeader,
+  Panel,
   Link,
   PageHeader,
   ScrollToTop,
@@ -15,6 +16,67 @@ import {
   WireframesContainer,
 } from './__components'
 import React from 'react'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import PeopleIcon from '@mui/icons-material/People'
+import PlaceIcon from '@mui/icons-material/Place'
+import EventNoteIcon from '@mui/icons-material/EventNote'
+import { styled } from '@mui/material'
+
+const userResearchPainPointPanelItems = [
+  {
+    listMarker: 1,
+    title: 'Time',
+    text: 'Working people are busy to visit physical stores for grocery shopping.',
+  },
+  {
+    listMarker: 2,
+    title: 'Health Related Issues',
+    text: `Due to health related issues or old age, some users do not have physical capabilities to go to stores for grocery shopping.`,
+  },
+  {
+    listMarker: 3,
+    title: 'COVID-19',
+    text: `Some users’ problem is COVID-19, which is making them worried to go to the public places to get groceries.`,
+  },
+]
+
+const usabilityStudyParameterPanelItems = [
+  {
+    listMarker: <EventNoteIcon fontSize="inherit" />,
+    title: 'Study type',
+    text: 'Moderated usability study',
+  },
+  {
+    listMarker: <PlaceIcon fontSize="inherit" />,
+    title: 'Location',
+    text: 'Finland, Remote',
+  },
+  {
+    listMarker: <PeopleIcon fontSize="inherit" />,
+    title: 'Participants',
+    text: '3 participants',
+  },
+  {
+    listMarker: <AccessTimeIcon fontSize="inherit" />,
+    title: 'Length',
+    text: '10 - 20 minutes',
+  },
+]
+
+const accessibilityConsiderationsPanelItems = [
+  {
+    listMarker: 1,
+    text: 'Provided access for users in multiple languages.',
+  },
+  {
+    listMarker: 2,
+    text: 'Used detailed imaginary and description to help users for better understanding.',
+  },
+  {
+    listMarker: 3,
+    text: 'Used icons to help make navigation easier.',
+  },
+]
 
 const GroceryShoppingAppPage = () => {
   const containerRef = React.useRef<HTMLDivElement | null>(null)
@@ -86,6 +148,13 @@ const GroceryShoppingAppPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>User research: Pain points</ImageSectionHeader>
+            <Panel items={userResearchPainPointPanelItems} />
+          </Section>
+        </Fade>
+
+        <Fade bottom>
+          <Section>
             <ImageSectionHeader>Persona</ImageSectionHeader>
             <Image
               src="/images/persona_grocery_app.png"
@@ -100,6 +169,12 @@ const GroceryShoppingAppPage = () => {
               src="/images/user_journey_map_grocery_app.png"
               alt="Grocery app user journey map image"
             />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Usability study: parameters</ImageSectionHeader>
+            <Panel items={usabilityStudyParameterPanelItems} />
           </Section>
         </Fade>
         <Fade bottom>
@@ -309,19 +384,55 @@ const GroceryShoppingAppPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>
+              Accessibility considerations
+            </ImageSectionHeader>
+            <Panel items={accessibilityConsiderationsPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>What I learned</ImageSectionHeader>
             <Typography>
               This is my first project in UX Design, while designing this app, I
-              learned the most important things are to understand the user’s
-              needs and make the best user experience. So for the best user
-              experience, conducting usability studies and iteration of the
-              designs are the keys.
+              learned that the initial designs were only the beginning of the
+              process. Usability Studies and feedback helped me understand the
+              users’ need and iteration of the designs make best users
+              experience.
             </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>My next steps</ImageSectionHeader>
+            <ListContainer>
+              <li>
+                <Typography>
+                  Conduct another round of usability studies to validate whether
+                  the pain points users experienced have been effectively
+                  addressed. Conduct more user research to determine any new
+                  areas of need. Conduct research on how successful the app is
+                  for users, who want to track their expenses.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Conduct more user research to determine any new areas of need.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Conduct research on how successful the app is for users, who
+                  want to track their expenses.
+                </Typography>
+              </li>
+            </ListContainer>
             <br />
-            <Typography>
-              Thank you for taking your time to review my work. I am very happy
-              to share my project with you. 🙂
+            <br />
+            <Typography variant="h6">
+              Thank you for your time to review my work on Deep’s Grocery
+              shopping app. I am very happy to share my project with you.
             </Typography>
-            <br />
           </Section>
         </Fade>
       </Container>
@@ -330,3 +441,10 @@ const GroceryShoppingAppPage = () => {
 }
 
 export default GroceryShoppingAppPage
+
+const ListContainer = styled('ol')({
+  paddingLeft: 20,
+  '& li': {
+    marginBottom: 16,
+  },
+})

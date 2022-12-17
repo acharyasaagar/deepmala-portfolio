@@ -71,6 +71,62 @@ const PositionedFab = styled(Fab)({
   display: 'none',
 })
 
+export const PanelRoot = styled('div')({
+  padding: 32,
+  background: '#D0E5FA',
+  display: 'flex',
+  alignItems: 'stretch',
+  justifyContent: 'space-around',
+  flexWrap: 'wrap',
+})
+
+const PanelItemRoot = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  textAlign: 'center',
+  width: 252,
+})
+
+const ListMarker = styled('span')({
+  fontSize: 32,
+  fontWeight: 600,
+  width: 80,
+  height: 80,
+  border: `1px solid #0D70D3`,
+  borderRadius: 40,
+  display: 'inline-flex',
+  marginBottom: 20,
+  justifyContent: 'center',
+  alignItems: 'center',
+})
+
+const PanelItemTitle = styled('h4')({
+  fontSize: 24,
+  fontWeight: 600,
+  margin: 16,
+})
+
+const PanelItem = ({ item }: any) => {
+  return (
+    <PanelItemRoot>
+      <div>{item.listMarker && <ListMarker>{item.listMarker}</ListMarker>}</div>
+      {item.title && <PanelItemTitle>{item.title} </PanelItemTitle>}
+      <p>{item.text}</p>
+    </PanelItemRoot>
+  )
+}
+
+export const Panel = ({ items }: { items: any[] }) => {
+  return (
+    <PanelRoot>
+      {items.map((item: any) => (
+        <PanelItem item={item} />
+      ))}
+    </PanelRoot>
+  )
+}
+
 export const ScrollToTop = () => {
   const buttonRef = React.useRef<HTMLButtonElement | null>(null)
 
