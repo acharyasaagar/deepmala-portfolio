@@ -178,6 +178,19 @@ const ExpenseTrackerPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>Initial paper wireframe</ImageSectionHeader>
+            <WireframesContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/et_paper_wireframe_1.png"
+                  alt="Expense tracker app paper wireframe"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
             <ImageSectionHeader>
               High fidelity wireframes - mobile version
             </ImageSectionHeader>
