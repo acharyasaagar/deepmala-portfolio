@@ -189,6 +189,31 @@ const CustomizeSweatShirtPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>Initial paper wireframes</ImageSectionHeader>
+            <WireframesContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/sweatshirt_paper_wireframe_1.png"
+                  alt="Grocrery app paper wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/sweatshirt_paper_wireframe_2.png"
+                  alt="Grocrery app paper wireframe"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image
+                  src="/images/sweatshirt_paper_wireframe_3.png"
+                  alt="Grocrery app paper wireframe"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
             <ImageSectionHeader>Low fidelity wireframes</ImageSectionHeader>
             <WireframesContainer>
               <WireframeContainer>
