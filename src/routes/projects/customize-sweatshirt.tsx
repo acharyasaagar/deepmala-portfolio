@@ -7,6 +7,7 @@ import PeopleIcon from '@mui/icons-material/People'
 import PlaceIcon from '@mui/icons-material/Place'
 import EventNoteIcon from '@mui/icons-material/EventNote'
 import {
+  BeforeAfterHeader,
   Image,
   ImageSectionHeader,
   Link,
@@ -176,6 +177,80 @@ const CustomizeSweatShirtPage = () => {
           <Section>
             <ImageSectionHeader>Usability study: parameters</ImageSectionHeader>
             <Panel items={usabilityStudyParameterPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 1 : Information change
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/customize_finding_1_before.png"
+                  alt="Customize app information change finding before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/customize_finding_1_after.png"
+                  alt="Customize app information change finding after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography variant="h6">
+              Users want to change their address and payment information before
+              the payment.
+            </Typography>
+            <br />
+            <Typography>
+              To make the user flow easier, I created this little text buttons
+              of ‘Change’ where users can change their information before their
+              payment.
+            </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 1 : Payment
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/customize_finding_2_before.png"
+                  alt="Customize app payment finding before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/customize_finding_2_after.png"
+                  alt="Customize app payment finding after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography variant="h6">
+              Users want to save their payment information for their next
+              shopping.
+            </Typography>
+            <br />
+            <Typography>
+              To make this payment section easy and simple, I added this ‘Save
+              this information’ button so that users do not have to enter their
+              information next time while doing the shopping.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
