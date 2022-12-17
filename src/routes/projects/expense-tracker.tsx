@@ -2,11 +2,16 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Topbar from '../../components/Topbar'
 import Fade from 'react-reveal/Fade'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import PeopleIcon from '@mui/icons-material/People'
+import PlaceIcon from '@mui/icons-material/Place'
+import EventNoteIcon from '@mui/icons-material/EventNote'
 import {
   Image,
   ImageSectionHeader,
   Link,
   PageHeader,
+  Panel,
   ScrollToTop,
   Section,
   SectionHeader,
@@ -14,6 +19,56 @@ import {
   WireframeContainer,
   WireframesContainer,
 } from './__components'
+import { styled } from '@mui/material'
+
+const userResearchPainPointPanelItems = [
+  {
+    listMarker: 1,
+    title: 'Long steps',
+    text: 'In most of the available websites, they have long process to add the expenses.',
+  },
+  {
+    listMarker: 2,
+    title: 'Complicated trackers',
+    text: `Most of the available websites are complicated and do not indicated clear steps.`,
+  },
+]
+const usabilityStudyParameterPanelItems = [
+  {
+    listMarker: <EventNoteIcon fontSize="inherit" />,
+    title: 'Study type',
+    text: 'Moderated usability study',
+  },
+  {
+    listMarker: <PlaceIcon fontSize="inherit" />,
+    title: 'Location',
+    text: 'Finland, Remote',
+  },
+  {
+    listMarker: <PeopleIcon fontSize="inherit" />,
+    title: 'Participants',
+    text: '3 participants',
+  },
+  {
+    listMarker: <AccessTimeIcon fontSize="inherit" />,
+    title: 'Length',
+    text: '10 - 20 minutes',
+  },
+]
+const accessibilityConsiderationsPanelItems = [
+  {
+    listMarker: 1,
+    text: 'Provided access for users in multi languages, with detailed imaginary, description and icons to help users for better understanding and help navigation easier.',
+  },
+  {
+    listMarker: 2,
+    text: 'Initial focus of the home screen on enter amount, help define the primary task or action for the user.',
+  },
+  {
+    listMarker: 3,
+    text: 'Clear labels for interative elements that can be read by screen readers.',
+  },
+]
 
 const ExpenseTrackerPage = () => {
   return (
@@ -80,6 +135,14 @@ const ExpenseTrackerPage = () => {
             />
           </Section>
         </Fade>
+
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>User research: Pain points</ImageSectionHeader>
+            <Panel items={userResearchPainPointPanelItems} />
+          </Section>
+        </Fade>
+
         <Fade bottom>
           <Section>
             <ImageSectionHeader>Persona</ImageSectionHeader>
@@ -105,6 +168,12 @@ const ExpenseTrackerPage = () => {
               src="/images/et_sitemap.png"
               alt="Expense tracker app user site map image"
             />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Usability study: parameters</ImageSectionHeader>
+            <Panel items={usabilityStudyParameterPanelItems} />
           </Section>
         </Fade>
         <Fade bottom>
@@ -229,19 +298,64 @@ const ExpenseTrackerPage = () => {
         </Fade>
         <Fade bottom>
           <Section>
+            <ImageSectionHeader>
+              Accessibility considerations
+            </ImageSectionHeader>
+            <Panel items={accessibilityConsiderationsPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>What I learned</ImageSectionHeader>
             <Typography>
-              This is my third project in UX Design, this is the project which I
-              personally feel that this is the one I am looking for and the one
-              I can use to record my daily expenses. So conducting usability
-              studies and iteration of the app’s designs many times, this is the
-              high fidelity prototype I made.
+              This is my third project in UX Design, while designing this app, I
+              learned that your first design is not your final design, you need
+              to understand the user’s need and make best users experience. And
+              also I realized that to understand the feasibility of an app, the
+              more research and usability study we conduct, the better a service
+              can be.
+            </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>My next steps</ImageSectionHeader>
+            <ListContainer>
+              <li>
+                <Typography>
+                  Conduct another round of usability studies to validate whether
+                  the pain points users experienced have been efficetively
+                  addressed.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Conduct more user research to determine any new areas of need.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Conduct research on how successful the app is for users, who
+                  want to track their expenses.
+                </Typography>
+              </li>
+            </ListContainer>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>Impact</ImageSectionHeader>
+            <Typography>
+              This daily expense tracker is a very easy to use, to keep record
+              in just 2-3 steps. I helps people to maintain their expenses by
+              showing clear record about where thier money going.
             </Typography>
             <br />
-            <Typography>
-              Thank you for taking your time to review my work. I am very happy
-              to share my project with you. 🙂
-            </Typography>
             <br />
+            <Typography variant="h6">
+              Thank you for your time to review my work on daily expense
+              tracker. I am very happy to share my project with you.
+            </Typography>
           </Section>
         </Fade>
       </Container>
@@ -250,3 +364,9 @@ const ExpenseTrackerPage = () => {
 }
 
 export default ExpenseTrackerPage
+const ListContainer = styled('ol')({
+  paddingLeft: 20,
+  '& li': {
+    marginBottom: 12,
+  },
+})

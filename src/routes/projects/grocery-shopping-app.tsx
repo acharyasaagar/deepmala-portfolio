@@ -422,8 +422,7 @@ const GroceryShoppingAppPage = () => {
               </li>
               <li>
                 <Typography>
-                  Conduct research on how successful the app is for users, who
-                  want to track their expenses.
+                  Conduct research on how successful the app is for users.
                 </Typography>
               </li>
             </ListContainer>
