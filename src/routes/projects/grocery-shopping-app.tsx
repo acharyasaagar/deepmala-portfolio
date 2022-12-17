@@ -14,6 +14,7 @@ import {
   SectionSubHeader,
   WireframeContainer,
   WireframesContainer,
+  BeforeAfterHeader,
 } from './__components'
 import React from 'react'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
@@ -175,6 +176,72 @@ const GroceryShoppingAppPage = () => {
           <Section>
             <ImageSectionHeader>Usability study: parameters</ImageSectionHeader>
             <Panel items={usabilityStudyParameterPanelItems} />
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 1: Pick up and delivery options
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/grocery_finding_1_before.png"
+                  alt="Grocrery app pick up and delivery finding before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/grocery_finding_1_after.png"
+                  alt="Grocrery app pick up and delivery finding after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography>
+              Usability study 1 helps me find out that the users got confused of
+              having pick up and delivery option in the same page. So after the
+              usabiity study, I divided pick up and delivery into 3 different
+              pages.
+            </Typography>
+          </Section>
+        </Fade>
+        <Fade bottom>
+          <Section>
+            <ImageSectionHeader>
+              Usability study finding 2: Guest user
+            </ImageSectionHeader>
+            <WireframesContainer style={{ flexWrap: 'nowrap' }}>
+              <WireframeContainer>
+                <BeforeAfterHeader>Before</BeforeAfterHeader>
+                <Image
+                  src="/images/grocery_finding_2_before.png"
+                  alt="Grocrery app guest user finding before"
+                />
+              </WireframeContainer>
+              <WireframeContainer>
+                <Image src="/images/arrow.png" />
+              </WireframeContainer>
+              <WireframeContainer>
+                <BeforeAfterHeader>After</BeforeAfterHeader>
+                <Image
+                  src="/images/grocery_finding_2_after.png"
+                  alt="Grocrery app guest user finding after"
+                />
+              </WireframeContainer>
+            </WireframesContainer>
+            <br />
+            <Typography>
+              Usability Study 2 let me know the confusion and frustration of the
+              user of not having the option of using the app as a guest user. So
+              after the usability study 2, I made an option of ‘Continue as
+              guest’.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>

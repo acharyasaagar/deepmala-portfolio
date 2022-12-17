@@ -172,3 +172,10 @@ export const ScrollToTop = () => {
     </PositionedFab>
   )
 }
+
+export const BeforeAfterHeader = styled('h4')({
+  fontSize: 32,
+  fontWeight: '600',
+  textAlign: 'center',
+  marginBottom: 16,
+})
