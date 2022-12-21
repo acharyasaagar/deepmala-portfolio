@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import PeopleIcon from '@mui/icons-material/People'
 import PlaceIcon from '@mui/icons-material/Place'
+
 import EventNoteIcon from '@mui/icons-material/EventNote'
 import {
   BeforeAfterHeader,
@@ -31,7 +32,7 @@ const userResearchPainPointPanelItems = [
   {
     listMarker: 2,
     title: 'Complicated trackers',
-    text: `Most of the available websites are complicated and do not indicated clear steps.`,
+    text: `Most of the available websites are complicated and do not indicate clear steps.`,
   },
 ]
 const usabilityStudyParameterPanelItems = [
@@ -442,7 +443,7 @@ const ExpenseTrackerPage = () => {
             <ImageSectionHeader>Impact</ImageSectionHeader>
             <Typography>
               This daily expense tracker is a very easy to use, to keep record
-              in just 2-3 steps. I helps people to maintain their expenses by
+              in just 2-3 steps. It helps people to maintain their expenses by
               showing clear record about where thier money going.
             </Typography>
             <Typography

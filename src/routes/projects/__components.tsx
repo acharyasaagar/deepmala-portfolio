@@ -3,7 +3,7 @@ import Fab from '@mui/material/Fab'
 import Typography from '@mui/material/Typography'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
-import { styled, Theme } from '@mui/material'
+import { styled } from '@mui/material'
 
 export const PageHeader = styled(Typography)({
   textAlign: 'center',
