@@ -36,7 +36,7 @@ const userResearchPainPointPanelItems = [
   {
     listMarker: 3,
     title: 'Delivery',
-    text: `After receiving the deliveries, some users are not happy with the products’ design shown in the pictures and what they received.`,
+    text: `Users find it very annoying to wait for the deliveries longer than the estimated date.`,
   },
 ]
 
@@ -171,6 +171,14 @@ const CustomizeSweatShirtPage = () => {
               src="/images/customize_user_journey_map.png"
               alt="Customize sweatshirt app user journey map image"
             />
+            <br />
+            <br />
+            <Typography>
+              This is the journey map of Saregama’s experience I created, which
+              revealed how helpful it would be to have a customize online
+              sweatshirt shopping platform for better online shopping
+              experience.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -204,22 +212,18 @@ const CustomizeSweatShirtPage = () => {
               </WireframeContainer>
             </WireframesContainer>
             <br />
-            <Typography variant="h6">
-              Users want to change their address and payment information before
-              the payment.
-            </Typography>
-            <br />
             <Typography>
-              To make the user flow easier, I created this little text buttons
-              of ‘Change’ where users can change their information before their
-              payment.
+              Users want to change their address and payment information before
+              the payment so to make the user flow easier, I created this little
+              text buttons of Change where users can change their information
+              before their payment.
             </Typography>
           </Section>
         </Fade>
         <Fade bottom>
           <Section>
             <ImageSectionHeader>
-              Usability study finding 1 : Payment
+              Usability study finding 2 : Payment
             </ImageSectionHeader>
             <WireframesContainer style={{ flexWrap: 'nowrap' }}>
               <WireframeContainer>
@@ -241,15 +245,11 @@ const CustomizeSweatShirtPage = () => {
               </WireframeContainer>
             </WireframesContainer>
             <br />
-            <Typography variant="h6">
-              Users want to save their payment information for their next
-              shopping.
-            </Typography>
-            <br />
             <Typography>
-              To make this payment section easy and simple, I added this ‘Save
-              this information’ button so that users do not have to enter their
-              information next time while doing the shopping.
+              Users want to save their payment information for their next
+              shopping. So to make this payment section easy and simple, I added
+              this ‘Save this information’ button so that users do not have to
+              enter their information next time while shopping.
             </Typography>
           </Section>
         </Fade>
@@ -260,6 +260,13 @@ const CustomizeSweatShirtPage = () => {
               src="/images/customize_sitemap.png"
               alt="Customize sweatshirt app user site map image"
             />
+            <br />
+            <br />
+            <Typography>
+              I created this sitemap in a hierarchical structure, to make
+              strategic information architecture decision which whould improve
+              overall website navigation.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -513,6 +520,7 @@ const CustomizeSweatShirtPage = () => {
 export default CustomizeSweatShirtPage
 
 const ListContainer = styled('ol')({
+  margin: 0,
   paddingLeft: 20,
   '& li': {
     marginBottom: 12,
