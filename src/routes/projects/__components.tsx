@@ -3,7 +3,7 @@ import Fab from '@mui/material/Fab'
 import Typography from '@mui/material/Typography'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
-import { styled } from '@mui/material'
+import { styled, Theme } from '@mui/material'
 
 export const PageHeader = styled(Typography)({
   textAlign: 'center',
@@ -71,13 +71,18 @@ const PositionedFab = styled(Fab)({
   display: 'none',
 })
 
-const PanelRoot = styled('div')({
-  padding: 32,
-  background: '#D0E5FA',
-  display: 'flex',
-  alignItems: 'stretch',
-  justifyContent: 'space-around',
-  flexWrap: 'wrap',
+const PanelRoot = styled('div')(({ theme }) => {
+  return {
+    padding: 32,
+    background: '#D0E5FA',
+    display: 'flex',
+    alignItems: 'stretch',
+    justifyContent: 'space-around',
+    flexWrap: 'nowrap',
+    [theme.breakpoints.down('md')]: {
+      flexWrap: 'wrap',
+    },
+  }
 })
 
 const PanelItemRoot = styled('div')({
@@ -85,7 +90,7 @@ const PanelItemRoot = styled('div')({
   flexDirection: 'column',
   justifyContent: 'stretch',
   textAlign: 'center',
-  width: 252,
+  width: 312,
 })
 
 const ListMarker = styled('span')({
@@ -121,7 +126,7 @@ export const Panel = ({ items }: { items: any[] }) => {
   return (
     <PanelRoot>
       {items.map((item: any) => (
-        <PanelItem item={item} />
+        <PanelItem item={item} key={item.title} />
       ))}
     </PanelRoot>
   )

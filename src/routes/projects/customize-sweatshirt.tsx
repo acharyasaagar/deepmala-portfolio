@@ -504,9 +504,10 @@ const CustomizeSweatShirtPage = () => {
                 </Typography>
               </li>
             </ListContainer>
-            <br />
-            <br />
-            <Typography variant="h6">
+            <Typography
+              variant="h6"
+              style={{ marginTop: 80, fontWeight: '400' }}
+            >
               Thank you for taking your time to review my work. I am very happy
               to share my project with you.
             </Typography>

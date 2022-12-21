@@ -160,6 +160,14 @@ const ExpenseTrackerPage = () => {
               src="/images/et_user_journey_map.png"
               alt="Expense tracker app user journey map image"
             />
+            <br />
+            <br />
+            <Typography>
+              This is a journey map of Rishi’s experience I created, which shows
+              how important and helpful it would be to have an easy to use
+              expense tracker, which can record the expenses in a very few
+              steps.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -169,6 +177,13 @@ const ExpenseTrackerPage = () => {
               src="/images/et_sitemap.png"
               alt="Expense tracker app user site map image"
             />
+            <br />
+            <br />
+            <Typography>
+              I created this sitemap in the hierarchical structure to guide the
+              structure of daily expense tracker in responsive website, that
+              ensure a cohesive and consistent experience across devices.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -430,9 +445,10 @@ const ExpenseTrackerPage = () => {
               in just 2-3 steps. I helps people to maintain their expenses by
               showing clear record about where thier money going.
             </Typography>
-            <br />
-            <br />
-            <Typography variant="h6">
+            <Typography
+              variant="h6"
+              style={{ marginTop: 80, fontWeight: '400' }}
+            >
               Thank you for your time to review my work on daily expense
               tracker. I am very happy to share my project with you.
             </Typography>
@@ -445,6 +461,7 @@ const ExpenseTrackerPage = () => {
 
 export default ExpenseTrackerPage
 const ListContainer = styled('ol')({
+  margin: 0,
   paddingLeft: 20,
   '& li': {
     marginBottom: 12,
