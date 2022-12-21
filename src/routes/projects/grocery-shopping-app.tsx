@@ -94,7 +94,7 @@ const GroceryShoppingAppPage = () => {
             <Typography>
               Grocery shopping app makes grocery shopping easy and simple within
               minutes by just sitting at home. This app targets customers who
-              cannot go to physical sotres to buy groceries due to busy schedule
+              cannot go to physical stores to buy groceries due to busy schedule
               or health related issues.
             </Typography>
             <SectionSubHeader>Problems:</SectionSubHeader>
@@ -118,12 +118,12 @@ const GroceryShoppingAppPage = () => {
               empathy maps to understand the needs of the users I am designing
               for. Research pointed out, most of the users were busy workers who
               do not have time to go to physical stores to do grocery shopping
-              and other users were the one who had health related issues so that
-              find it difficult to visit the physical stores for grocery
+              and other users were the one who had health related issues which
+              make difficult for them to visit the physical stores for grocery
               shopping. Research also revealed that it was not only the time and
               health related issues which were causing problems to do physical
               grocery shopping. Other user problems include COVID which is
-              making them worried to to to the public place to buy groceries.
+              making them worried to go to the public place to buy groceries.
             </Typography>
           </Section>
         </Fade>
@@ -170,6 +170,12 @@ const GroceryShoppingAppPage = () => {
               src="/images/user_journey_map_grocery_app.png"
               alt="Grocery app user journey map image"
             />
+            <br />
+            <br />
+            <Typography>
+              This is the journey map of Mori Sann’s experience I created, which
+              revealed how helpful it would be to have a grocery shopping app.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -251,6 +257,13 @@ const GroceryShoppingAppPage = () => {
               src="/images/usability_test_finding_grocery_app.png"
               alt="Image of usability test findings of grocery app"
             />
+            <br />
+            <br />
+            <Typography>
+              This is the usability test finding of Mori Sann, which shows
+              clearly about how he feels and act on using this grocery shopping
+              app.
+            </Typography>
           </Section>
         </Fade>
         <Fade bottom>
@@ -496,9 +509,7 @@ const GroceryShoppingAppPage = () => {
                 <Typography>
                   Conduct another round of usability studies to validate whether
                   the pain points users experienced have been effectively
-                  addressed. Conduct more user research to determine any new
-                  areas of need. Conduct research on how successful the app is
-                  for users, who want to track their expenses.
+                  addressed.
                 </Typography>
               </li>
               <li>
@@ -528,6 +539,7 @@ const GroceryShoppingAppPage = () => {
 export default GroceryShoppingAppPage
 
 const ListContainer = styled('ol')({
+  margin: 0,
   paddingLeft: 20,
   '& li': {
     marginBottom: 12,
