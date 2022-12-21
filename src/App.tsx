@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Spinner from './components/Spinner'
 import AboutPage from './routes/about'
 import ProjectsPage from './routes/projects'
@@ -8,6 +8,7 @@ import CustomizeSweatShirtPage from './routes/projects/customize-sweatshirt'
 import ExpenseTrackerPage from './routes/projects/expense-tracker'
 
 function App() {
+  useScrollToTop()
   return (
     <Routes>
       <Route
@@ -55,3 +56,14 @@ function App() {
 }
 
 export default App
+
+const useScrollToTop = () => {
+  const location = useLocation()
+  React.useEffect(() => {
+    document.documentElement.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: 'auto',
+    })
+  }, [location.pathname])
+}

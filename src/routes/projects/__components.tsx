@@ -125,8 +125,8 @@ const PanelItem = ({ item }: any) => {
 export const Panel = ({ items }: { items: any[] }) => {
   return (
     <PanelRoot>
-      {items.map((item: any) => (
-        <PanelItem item={item} key={item.title} />
+      {items.map((item: any, index) => (
+        <PanelItem item={item} key={index} />
       ))}
     </PanelRoot>
   )
